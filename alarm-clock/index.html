@@ -224,7 +224,7 @@
           localAlarmArray = JSON.parse(localStorage.getItem("localAlarm"));
           localAlarmArray.forEach((lp) => {
             // Loops all over the array and creates the HTML to append
-            let html = `<div class="alarm" id="${lp.id}">${lp.hours}:${lp.mins}:${lp.seconds}${lp.ampm} <i class="fa-solid fa-trash"  onclick="deleteAlarm(this)"></i></div>`;
+            let html = `<div class="alarm" id="${lp.id}">${lp.hour}:${lp.minute}:${lp.second}${lp.ampm} <i class="fa-solid fa-trash"  onclick="deleteAlarm(this)"></i></div>`;
             alarmLists.innerHTML += html;
           });
         }
